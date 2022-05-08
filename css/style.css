@@ -1,0 +1,68 @@
+/* navigation */
+
+nav {
+    display: none;
+    min-height: 100vh;
+}
+
+#hamburger-menu{
+    display: none;
+
+}
+
+.fa-bars{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+li {
+    list-style: none;
+    margin-top: 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: #0A3641;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+}
+
+.nav-logo {
+    height: 52px;
+}
+
+/* footer */
+/* https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 for bottum footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.icon{
+    color: #FFF;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* desktop menu */
+
+    .fa-bars{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        min-height: unset;
+      
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}

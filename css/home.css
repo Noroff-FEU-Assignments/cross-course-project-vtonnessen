@@ -1,0 +1,49 @@
+/* mobile style homepage */
+
+body{
+    background-image: url(/images/homepage_desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-white{
+    display: none;    
+}
+
+.logo-black{
+    width: 320px;
+    margin-top: 150px;
+}
+
+.icon-wrapper{
+    display: none;
+}
+
+/* desktop styling */
+@media only screen and (min-width: 1024px) {
+
+    body{
+        background-image: url(/images/homepage_desktop.jpg);
+    }
+
+    .logo-black{
+        display: none;
+    }
+
+    .logo-white{
+        display: block;
+        width: 600px;
+        margin-top: 100px;
+    }
+}
