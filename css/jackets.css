@@ -1,0 +1,41 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 85%;
+    margin: auto;
+}
+
+.jacket-image {
+    max-width: 100%;
+    margin-top: 50px;
+    border: solid 5px #D99923;
+}
+
+.info-container {
+    display: flex;
+    /* max-width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+}
+
+h2, h3 {
+    /* margin: unset; */
+    color: #0A3641;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px){
+    body {
+        background-color: #0A3641;
+    }
+
+    h1, h2, h3 {
+        color: #fff;
+    }
+}

@@ -1,13 +1,8 @@
-/* main {
-    display: flex;
-} */
-
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 85%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -17,8 +12,34 @@ h1 {
     background-size: cover;
     width: 100%;
     height: 240px;
-    color: #D99923;
+    color: #0A3641;
     text-align: center;
     padding-top: 10px;
-    text-shadow: #D999 0 3px 6px;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: #0A3641;
+    }
+
+    h2, p {
+        color: #fff;
+    }
+
+    main {
+        flex-direction: row;
+        /* gap: 80px; */
+        justify-content: space-between;
+        max-width: 80%;
+    }
+
+    .container {
+        order: 1;
+        width: 50%;
+    }
+    h1 {
+        order: 2;
+        height: 600px;
+        width: 400px;
+    }
 }

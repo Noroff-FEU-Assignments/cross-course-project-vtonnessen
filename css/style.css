@@ -34,6 +34,10 @@ li a{
     height: 52px;
 }
 
+.white-logo {
+    display: none;
+}
+
 /* footer */
 /* https://dev.to/nehalahmadkhan/how-to-make-footer-stick-to-bottom-of-web-page-3i14 for bottum footer */
 
@@ -48,8 +52,27 @@ footer{
     color: #FFF;
 }
 
+/* typografi */
+p {
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+
 @media only screen and (min-width: 1024px) {
     /* desktop menu */
+
+    .blue-logo {
+        display: none;
+    }
+
+    .white-logo{
+        display: block;
+    }
 
     .fa-bars{
         display: none;
@@ -64,5 +87,13 @@ footer{
     ul{
         display: flex;
         justify-content: space-around;
+    }
+
+    li a {
+        color: #FFF;
+    }
+
+    .active {
+        border-bottom: solid 3px #FFF;
     }
 }
